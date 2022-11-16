@@ -118,7 +118,7 @@ public class Test{
             System.out.println(k+ " "+usuarios.get(k));
         }
 
-
+        System.out.println(CaracterMasRepetido.caracter("mySaaaaaaatsssring2"));
 
 
 

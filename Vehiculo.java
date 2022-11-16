@@ -1,4 +1,7 @@
 class Vehiculo{
+
+    //variables mienbro, atributos en python
+    
     private int anio;
     private String marca;
     private String modelo;
@@ -6,21 +9,28 @@ class Vehiculo{
     private int ruedas;
 
     public Vehiculo(){
+        cantidadVehiculo++;
     };
+
+    private static int cantidadVehiculo=0;//Static-- pertenece a la clase
+
 
     public Vehiculo(String color_nuevo){
         this.color =color_nuevo;
+        cantidadVehiculo++;
     };
 
     public Vehiculo(String color, int ruedas){
         this.color=color;
         this.ruedas=ruedas;
+        cantidadVehiculo++;
     };
 
     public Vehiculo(String color, String marca, String modelo){
         this.color=color;
         this.marca=marca;
         this.modelo=modelo;
+        cantidadVehiculo++;
     };
 
     public int getanio(){
@@ -58,5 +68,8 @@ class Vehiculo{
         this.ruedas=ruedas;
     }
 
+    public static int getCandidadVehiculo() {
+        return cantidadVehiculo;
+    }
 
 }

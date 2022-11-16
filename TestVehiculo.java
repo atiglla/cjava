@@ -49,6 +49,8 @@ public class TestVehiculo {
 
         Vehiculo auto2 = new Vehiculo("red", "honda", "nis");
 
+        System.out.println(Vehiculo.getCandidadVehiculo());
+
 
     }
 }
