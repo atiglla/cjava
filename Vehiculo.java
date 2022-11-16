@@ -1,9 +1,9 @@
 class Vehiculo{
-    public int anio;
-    public String marca;
-    public String modelo;
-    public String color;
-    public int ruedas;
+    private int anio;
+    private String marca;
+    private String modelo;
+    private String color;
+    private int ruedas;
 
     public Vehiculo(){
     };
@@ -22,4 +22,41 @@ class Vehiculo{
         this.marca=marca;
         this.modelo=modelo;
     };
+
+    public int getanio(){
+        return anio;
+    }
+    public void setanio(int anio){
+        this.anio=anio;
+    }
+
+    public String getmarca(){
+        return marca;
+    }
+    public void setmarca(String marca){
+        this.marca=marca;
+    }
+
+    public String getmodelo(){
+        return modelo;
+    }
+    public void setmodelo(String modelo){
+        this.modelo=modelo;
+    }
+
+    public String getcolor(){
+        return color;
+    }
+    public void setcolor(String color){
+        this.color=color;
+    }
+
+    public int getruedas(){
+        return ruedas;
+    }
+    public void setruedas(int ruedas){
+        this.ruedas=ruedas;
+    }
+
+
 }
